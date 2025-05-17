@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(30deg, #ffffff, #000000);
+
+}
+header{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(240, 15, 86)
+}
+img{
+    transition: 0.3s all ease;
+}
+img:hover{
+    transform: rotate(30deg);
+}
+.div2{
+    position: absolute;
+    right: 20px;
+    margin-top:200px;
+        animation: 8s slide linear infinite;
+
+
+}
+.div1{
+    animation: 8s slides linear infinite;
+
+}
+
+.div3{
+    margin-top: 250px;
+    animation: 8s slides linear infinite;
+}
+
+section{
+    margin-left:50px;
+
+display: grid;
+grid-template-columns: 1r, 2r;
+
+}
+
+span{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+
+
+
+}
+p{
+    font-size: medium;
+    font-weight: 600;
+    color: yellow;
+}
+
+@keyframes slides{
+    0%{
+        margin-left: 10px;
+    }
+
+    50%{
+        margin-left: 500px
+
+    }
+
+    100%{
+        margin-left: 10px;
+    }
+    
+}
+
+@keyframes slide{
+    0%{
+        margin-right:  10px;
+    }
+
+    50%{
+        margin-right: 500px;
+
+    }
+
+    100%{
+        margin-right:  10px;
+    }
+    
+}
+
+@media screen and (max-width:920px){
+    img{
+        width:150px;
+    height: 150px;
+    }
+
+    span{
+        width: 50%;
+
+    }
+    p{
+        width: 80%;
+    }
+}
